@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h1>LNLY</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Best Offer</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+                <li><a href="#">Books</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <h1>Welcome to <span> Libran's Library</span></h1><br>
+            <a href="#form">Become a Member</a>
+        </div>
+    </div>
+    <form id="form">
+        <h2 style="text-align: center;">Become a Member</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <label for="membershipType">Membership Type:</label>
+        <select id="membershipType" name="membershipType" required>
+          <option value="">Select</option>
+          <option value="student">Student</option>
+          <option value="adult">Adult</option>
+          <option value="senior">Senior Citizen</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>
